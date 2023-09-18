@@ -1,0 +1,16 @@
+.footer{
+    position: relative;
+    background-color: #213547;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    bottom: 0;
+    flex: 1;
+}
+.footer *{
+    color: white;
+    fill: white;
+}
+.footer svg{
+    font-size: 3rem;
+}

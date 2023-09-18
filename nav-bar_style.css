@@ -1,0 +1,100 @@
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+h1{
+    font-size: 4rem;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    height: 100%;
+    gap: 2em;
+    
+}
+li{
+    position: relative;
+    
+}
+li a{
+    display: block;
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+    
+}
+img{
+    height: 12rem;
+    margin-bottom: 4rem;
+}
+li:hover{
+    color: white;
+    background-color: #72cacf;
+
+}
+li:hover a{
+    
+    color: white;
+}
+li:hover .nav-link-border{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 4px dashed #213547 ;
+}
+.container-sidebar{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 24%;
+    
+
+}
+.border-right{
+    border-right: 0.4rem solid #213547;
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    right: 0;
+}
+.left-arrow{
+    position: absolute;
+    top: 0rem;
+    right: -0.8rem;
+    transition: 150ms;
+}
+.arrow{
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+    background-color: #213547;
+    fill: white;
+    line-height: 0;
+    border: none;
+    
+}
+.arrow:hover{
+    fill: #72cacf;
+}
+
+
+
+@media only screen and (min-width: 600px){
+
+
+}
