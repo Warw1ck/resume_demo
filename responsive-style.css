@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1400px){
+    *{
+        font-size: 0.6em;
+    }
+    .rectangle{
+        height: 10rem;
+        width: 35rem;
+    }
+    .sidebar .logo{
+        display: none;
+
+    }
+    .border-right{
+        display: none;
+    }
+    .menu ul{
+        display: none;
+    }
+    .left-arrow{
+        display: none;
+    }
+    .container-sidebar{
+        height: 5rem;
+        background-color: #F6BA6F;
+        width: 100%;
+
+    }
+    .hamburger{
+        display: inline;
+    }
+    .menu:hover ul{
+        display: block;
+        position: absolute;
+        
+        background-color: #ADE4DB;
+        top: 5rem;
+        right: 0;
+        left: 0;
+        background-color: #ADE4DB;
+
+    }
+   .profile{
+    flex-direction: column;
+    align-items: center;
+    transform: none;
+   }
+   .footer{
+    transform: none;
+   }
+
+}

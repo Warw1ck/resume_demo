@@ -1,30 +1,37 @@
 const navButton = document.querySelector('.arrow')
-const navBarContainer = document.querySelector('.sidebar')
+const navBarContainer = document.querySelector('.container-sidebar')
 const navBarBorder = document.querySelector('.border-right')
+
+const personProfile = document.querySelector('.profile')
+const footer = document.querySelector('.footer')
+
+const image = document.querySelector('.image');
+const rectangle = document.querySelector('.rectangle');
+
+const layer = document.querySelector('body');
+const imageBorder = document.querySelector('.image-border');
+
 navButton.addEventListener('click', (e)=>{
-    if (navBarContainer.style.display != "none") {
-        navBarContainer.style.display = "none";
-        navBarBorder.style.display = "none";
-        navButton.parentElement.style.position = "static"
-        document.querySelector("body").style.padding = "0px 0px 0px 0px";
+    if (navBarContainer.style.transform != "translateX(-100%)") {
+        navButton.style.transform = 'translateX(2rem)';
+        navBarContainer.style.transform = 'translateX(-100%)';
         navButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>'
+        personProfile.style.transform = 'none';
+        footer.style.transform = 'none'
+
 
     }else{
-        navBarContainer.style.display = "flex";
-        navBarBorder.style.display = "inline";
-        navButton.parentElement.style.position = "absolute"
-        document.querySelector("body").style.padding = "0px 0px 0px 24%";
+        navBarContainer.style.transform = "none";
+        navButton.style.transform = 'none'
+        personProfile.style.transform = 'translateX(15%)'
         navButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>'
+        footer.style.transform = 'translateX(24%)'
 
     }
     
 })
 
-const image = document.querySelector('.my-photo img');
-const rectangle = document.querySelector('.rectangle');
 
-const layer = document.querySelector('body');
-const imageBorder = document.querySelector('.image-border');
 
 
 layer.addEventListener('mousemove', (e) => {
